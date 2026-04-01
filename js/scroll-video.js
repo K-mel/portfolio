@@ -10,7 +10,7 @@
     function resize(){
         canvas.width  = window.innerWidth;
         canvas.height = window.innerHeight;
-        if(frames[currentFrame]?.complete) draw(frames[currentFrame]);
+        if(frames[currentFrame]?.complete && frames[currentFrame]?.naturalWidth) draw(frames[currentFrame]);
     }
     resize();
     window.addEventListener('resize', resize);
@@ -24,15 +24,18 @@
         ctx.drawImage(img, (cw-dw)/2, (ch-dh)/2, dw, dh);
     }
 
-    // Préchargement de toutes les frames
-    for(let i=0; i<FRAME_COUNT; i++){
+    // Charger frame 0 en premier — affichage immédiat
+    const f0 = new Image();
+    f0.src = 'frames/f0001.jpg';
+    f0.onload = () => { loaded++; draw(f0); };
+    frames[0] = f0;
+
+    // Charger le reste
+    for(let i=1; i<FRAME_COUNT; i++){
         const img = new Image();
         img.src = `frames/f${String(i).padStart(4,'0')}.jpg`;
-        img.onload = ()=>{
-            loaded++;
-            if(loaded===1){ currentFrame=0; draw(frames[0]); }
-        };
-        frames.push(img);
+        img.onload = () => { loaded++; };
+        frames[i] = img;
     }
 
     window.addEventListener('scroll', ()=>{
@@ -43,7 +46,9 @@
 
         // Frame courante
         const idx = Math.min(FRAME_COUNT-1, Math.floor(progress * FRAME_COUNT));
-        if(frames[idx]?.complete){ currentFrame=idx; draw(frames[idx]); }
+        if(frames[idx]?.complete && frames[idx]?.naturalWidth){
+            currentFrame=idx; draw(frames[idx]);
+        }
 
         // Barre de progression
         document.getElementById('sv-bar').style.width = (progress*100)+'%';

@@ -1,6 +1,21 @@
 /* ─── NAV SCROLL ─── */
 window.addEventListener('scroll',()=>{ document.getElementById('nav').classList.toggle('on',scrollY>50); });
 
+/* ─── BURGER MENU ─── */
+const burger=document.getElementById('n-burger');
+const navLinks=document.querySelector('.n-links');
+if(burger){
+    burger.addEventListener('click',()=>{
+        burger.classList.toggle('open');
+        navLinks.classList.toggle('open');
+    });
+    // Fermer au clic sur un lien
+    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+        burger.classList.remove('open');
+        navLinks.classList.remove('open');
+    }));
+}
+
 /* ─── REVEAL ─── */
 const obs=new IntersectionObserver((entries)=>{
     entries.forEach((e,i)=>{ if(e.isIntersecting) setTimeout(()=>e.target.classList.add('on'),i*80); });
