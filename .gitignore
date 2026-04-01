@@ -1,0 +1,28 @@
+# Clés et config locale
+.env
+
+# Frames générées (binaires lourds ~27MB)
+frames/
+
+# Vidéo source
+scroll_video.mp4
+scroll_site.mp4
+scroll_futur.mp4
+
+# Image source générée
+source_image.jpg
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
