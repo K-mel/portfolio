@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camel Benmoussa — Développeur IA & Solutions Digitales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Exo+2:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="cx"></div>
+<div id="ci"></div>
+
+<!-- Loader -->
+<div id="loader">
+    <div id="scan"></div>
+    <div class="l-name">CAMEL BENMOUSSA</div>
+    <div class="l-sub">INITIALISATION DU PORTFOLIO...</div>
+</div>
+
+<!-- Nav -->
+<nav id="nav">
+    <a href="#" class="n-logo">CB</a>
+    <ul class="n-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Processus</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#ai-demo">IA Demo</a></li>
+        <li><a href="#voice">Voice AI</a></li>
+        <li><a href="#roi">ROI IA</a></li>
+        <li><a href="#contact" class="n-cta">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+    <canvas id="hc"></canvas>
+    <div class="h-wrap">
+        <div class="h-tag">// DÉVELOPPEUR IA & CRÉATEUR DE SOLUTIONS DIGITALES</div>
+        <h1 class="h-name">CAMEL<br><em>BENMOUSSA</em></h1>
+        <div class="h-role" id="h-role">Développeur IA</div>
+        <p class="h-desc">
+            Je transforme vos idées en produits digitaux performants — applications web, SaaS,
+            automatisation et solutions d'intelligence artificielle déployées en production.
+        </p>
+        <div class="h-ctas">
+            <a href="#projects" class="btn-p">Voir mes réalisations →</a>
+            <a href="#contact" class="btn-s">Démarrer un projet</a>
+        </div>
+    </div>
+    <div class="h-scroll">
+        <span>SCROLL</span>
+        <div class="h-line"></div>
+    </div>
+</section>
+
+<!-- ═══ SCROLL VIDEO ═══ -->
+<div id="sv-section">
+    <div id="sv-sticky">
+        <canvas id="sv-canvas"></canvas>
+        <div class="sv-overlay"></div>
+        <div class="sv-content" id="sv-content">
+            <div class="s-tag" style="justify-content:center;color:var(--teal);text-shadow:0 0 20px rgba(0,229,212,.7)">Intelligence Artificielle</div>
+            <h2 class="s-title" style="font-size:clamp(2rem,6vw,5rem);text-align:center;text-shadow:0 2px 30px rgba(0,0,0,.9), 0 0 60px rgba(0,229,212,.5)">LE FUTUR,<br><em>C'EST MAINTENANT</em></h2>
+            <p style="color:rgba(255,255,255,0.9);font-family:var(--font-m);font-size:.8rem;letter-spacing:.2em;margin-top:16px;text-shadow:0 1px 10px rgba(0,0,0,.8)">JE LE CONSTRUIS POUR VOUS</p>
+        </div>
+        <div class="sv-progress">
+            <div class="sv-bar-wrap"><div class="sv-bar" id="sv-bar"></div></div>
+            <span class="sv-scroll-hint" id="sv-hint">SCROLL POUR EXPLORER</span>
+        </div>
+    </div>
+</div>
+
+<!-- Ticker -->
+<div class="ticker">
+    <div class="t-inner">
+        <span class="t-item"><span class="t-dot"></span>NEXT.JS 15</span>
+        <span class="t-item"><span class="t-dot"></span>INTELLIGENCE ARTIFICIELLE</span>
+        <span class="t-item"><span class="t-dot"></span>PYTHON · FASTAPI</span>
+        <span class="t-item"><span class="t-dot"></span>APPLICATIONS SAAS</span>
+        <span class="t-item"><span class="t-dot"></span>AUTOMATISATION N8N</span>
+        <span class="t-item"><span class="t-dot"></span>CLAUDE · GEMINI · ELEVENLABS</span>
+        <span class="t-item"><span class="t-dot"></span>DOCKER · VPS</span>
+        <span class="t-item"><span class="t-dot"></span>SUPABASE · POSTGRESQL</span>
+        <span class="t-item"><span class="t-dot"></span>STRIPE · PAIEMENTS</span>
+        <span class="t-item"><span class="t-dot"></span>VOICE AI</span>
+        <!-- dupliqué pour boucle parfaite -->
+        <span class="t-item"><span class="t-dot"></span>NEXT.JS 15</span>
+        <span class="t-item"><span class="t-dot"></span>INTELLIGENCE ARTIFICIELLE</span>
+        <span class="t-item"><span class="t-dot"></span>PYTHON · FASTAPI</span>
+        <span class="t-item"><span class="t-dot"></span>APPLICATIONS SAAS</span>
+        <span class="t-item"><span class="t-dot"></span>AUTOMATISATION N8N</span>
+        <span class="t-item"><span class="t-dot"></span>CLAUDE · GEMINI · ELEVENLABS</span>
+        <span class="t-item"><span class="t-dot"></span>DOCKER · VPS</span>
+        <span class="t-item"><span class="t-dot"></span>SUPABASE · POSTGRESQL</span>
+        <span class="t-item"><span class="t-dot"></span>STRIPE · PAIEMENTS</span>
+        <span class="t-item"><span class="t-dot"></span>VOICE AI</span>
+    </div>
+</div>
+
+<!-- Stats -->
+<section id="stats">
+    <div class="st-grid">
+        <div class="st-item rv"><span class="st-num" data-t="5">0</span><span class="st-lbl">APPS EN PRODUCTION</span></div>
+        <div class="st-item rv"><span class="st-num" data-t="15">0</span><span class="st-lbl">PROJETS LIVRÉS</span></div>
+        <div class="st-item rv"><span class="st-num" data-t="3">0</span><span class="st-lbl">SAAS ACTIFS</span></div>
+        <div class="st-item rv"><span class="st-num" data-t="100">0</span><span class="st-lbl">% SATISFACTION</span></div>
+    </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section id="services">
+    <div class="s-tag rv">Ce que je fais</div>
+    <h2 class="s-title rv">MES <em>SERVICES</em></h2>
+    <p class="s-desc rv">Solutions digitales sur mesure pour les entreprises et particuliers qui veulent passer au niveau supérieur.</p>
+    <div class="sv-grid">
+        <div class="sv-card rv">
+            <span class="sv-num">01</span>
+            <span class="sv-icon">⚡</span>
+            <h3 class="sv-h">APPLICATIONS WEB & SAAS</h3>
+            <p class="sv-p">Plateformes complètes avec authentification, paiements Stripe, tableaux de bord, déploiement Docker sur VPS. Du concept à la mise en ligne en quelques semaines.</p>
+            <div class="sv-tags">
+                <span class="sv-tag">Next.js</span><span class="sv-tag">Supabase</span><span class="sv-tag">Stripe</span><span class="sv-tag">Docker</span>
+            </div>
+        </div>
+        <div class="sv-card rv">
+            <span class="sv-num">02</span>
+            <span class="sv-icon">🤖</span>
+            <h3 class="sv-h">SOLUTIONS IA SUR MESURE</h3>
+            <p class="sv-p">Chatbots intelligents, analyse documentaire, génération de contenu automatisée avec Claude, Gemini ou GPT intégré dans vos processus métier existants.</p>
+            <div class="sv-tags">
+                <span class="sv-tag">Claude API</span><span class="sv-tag">Gemini</span><span class="sv-tag">ElevenLabs</span><span class="sv-tag">RAG</span>
+            </div>
+        </div>
+        <div class="sv-card rv">
+            <span class="sv-num">03</span>
+            <span class="sv-icon">🔄</span>
+            <h3 class="sv-h">AUTOMATISATION & WORKFLOWS</h3>
+            <p class="sv-p">Connectez vos outils, éliminez les tâches répétitives. Workflows n8n, intégrations CRM, pipelines de données — récupérez des heures chaque semaine.</p>
+            <div class="sv-tags">
+                <span class="sv-tag">n8n</span><span class="sv-tag">API REST</span><span class="sv-tag">Webhooks</span><span class="sv-tag">Python</span>
+            </div>
+        </div>
+        <div class="sv-card rv">
+            <span class="sv-num">04</span>
+            <span class="sv-icon">🎙️</span>
+            <h3 class="sv-h">VOICE AI & ASSISTANTS</h3>
+            <p class="sv-p">Assistants vocaux pour applications, agents téléphoniques IA, interfaces conversationnelles en langage naturel disponibles 24h/24 pour vos clients.</p>
+            <div class="sv-tags">
+                <span class="sv-tag">Twilio</span><span class="sv-tag">ElevenLabs</span><span class="sv-tag">Speech API</span><span class="sv-tag">NLP</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ PROCESS ═══ -->
+<section id="process">
+    <div class="s-tag rv" style="justify-content:center">Ma méthode de travail</div>
+    <h2 class="s-title rv" style="text-align:center">DE L'IDÉE À LA <em>PRODUCTION</em></h2>
+    <p class="s-desc rv" style="margin:0 auto;text-align:center">Un processus rodé qui garantit livraison rapide, zéro surprise et résultats mesurables — de la première discussion au déploiement.</p>
+
+    <div class="process-track" id="process-track">
+        <!-- Ligne animée -->
+        <div class="process-line"><div class="process-line-fill" id="proc-line"></div></div>
+
+        <!-- Étape 1 -->
+        <div class="process-step" data-delay="0">
+            <div class="process-node">
+                <span class="process-icon">🎯</span>
+                <div class="process-num">01</div>
+            </div>
+            <div class="process-body">
+                <div class="process-title">BRIEF & CADRAGE</div>
+                <div class="process-desc">Un call de 30 minutes pour comprendre votre problème, vos contraintes et vos objectifs. Je pose les bonnes questions pour ne pas perdre de temps.</div>
+                <span class="process-tag">GRATUIT · 30 MIN</span>
+            </div>
+        </div>
+
+        <!-- Étape 2 -->
+        <div class="process-step" data-delay="180">
+            <div class="process-node">
+                <span class="process-icon">⚡</span>
+                <div class="process-num">02</div>
+            </div>
+            <div class="process-body">
+                <div class="process-title">PROTOTYPE RAPIDE</div>
+                <div class="process-desc">Une démo fonctionnelle en 48h pour valider la direction. Vous voyez quelque chose de concret avant d'engager le budget complet.</div>
+                <span class="process-tag">48H · ITÉRATIF</span>
+            </div>
+        </div>
+
+        <!-- Étape 3 -->
+        <div class="process-step" data-delay="360">
+            <div class="process-node">
+                <span class="process-icon">🔧</span>
+                <div class="process-num">03</div>
+            </div>
+            <div class="process-body">
+                <div class="process-title">DÉVELOPPEMENT</div>
+                <div class="process-desc">Build en sprints courts avec updates régulières. Vous suivez l'avancement en temps réel et pouvez ajuster les priorités à tout moment.</div>
+                <span class="process-tag">AGILE · TRANSPARENT</span>
+            </div>
+        </div>
+
+        <!-- Étape 4 -->
+        <div class="process-step" data-delay="540">
+            <div class="process-node">
+                <span class="process-icon">🚀</span>
+                <div class="process-num">04</div>
+            </div>
+            <div class="process-body">
+                <div class="process-title">LIVRAISON & SUIVI</div>
+                <div class="process-desc">Déploiement en production, formation si besoin, documentation. Et je reste disponible après — parce qu'un produit qui marche, ça s'entretient.</div>
+                <span class="process-tag">PROD · SUPPORT INCLUS</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ PROJETS ═══ -->
+<section id="projects">
+    <div class="s-tag rv">Réalisations</div>
+    <h2 class="s-title rv">PROJETS <em>EN PRODUCTION</em></h2>
+    <p class="s-desc rv">Des produits réels, en ligne, utilisés par de vrais clients et utilisateurs.</p>
+    <div class="pj-grid">
+
+        <!-- AcqLead -->
+        <div class="pj-card rv">
+            <div class="pj-vis">
+                <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="200" fill="#0C1020"/>
+                    <rect x="16" y="16" width="368" height="28" rx="3" fill="#121828"/>
+                    <rect x="24" y="24" width="70" height="12" rx="2" fill="#00E5D4" opacity=".7"/>
+                    <rect x="274" y="24" width="50" height="12" rx="2" fill="#FFB300" opacity=".8"/>
+                    <rect x="16" y="56" width="174" height="110" rx="3" fill="#0D1928"/>
+                    <rect x="26" y="66" width="50" height="7" rx="2" fill="#00E5D4" opacity=".4"/>
+                    <rect x="26" y="80" width="144" height="4" rx="2" fill="#1A2535"/>
+                    <rect x="26" y="90" width="110" height="4" rx="2" fill="#1A2535"/>
+                    <rect x="26" y="106" width="56" height="18" rx="2" fill="#00E5D4" opacity=".12"/>
+                    <rect x="26" y="132" width="78" height="12" rx="2" fill="#1A2535"/>
+                    <rect x="26" y="148" width="60" height="12" rx="2" fill="#1A2535"/>
+                    <rect x="202" y="56" width="182" height="110" rx="3" fill="#0D1928"/>
+                    <circle cx="225" cy="82" r="12" fill="#00E5D4" opacity=".1"/>
+                    <rect x="244" y="74" width="120" height="6" rx="2" fill="#1A2535"/>
+                    <rect x="244" y="86" width="80" height="4" rx="2" fill="#1A2535"/>
+                    <rect x="208" y="108" width="166" height="3" rx="1" fill="#1A2535"/>
+                    <rect x="208" y="118" width="100" height="3" rx="1" fill="#1A2535"/>
+                    <rect x="208" y="128" width="130" height="3" rx="1" fill="#1A2535"/>
+                    <text x="200" y="185" text-anchor="middle" font-family="Share Tech Mono" font-size="10" fill="#00E5D4" opacity=".45">acqlead.fr — LIVE</text>
+                </svg>
+                <div class="pj-ov"><a href="https://acqlead.fr" target="_blank" class="btn-p" style="font-size:.78rem;padding:9px 22px">Voir le site →</a></div>
+            </div>
+            <div class="pj-info">
+                <div class="pj-live"><div class="pj-dot"></div>EN PRODUCTION</div>
+                <h3 class="pj-h">AcqLead</h3>
+                <p class="pj-p">SaaS B2B de génération de leads qualifiés. Scraping IA, scripts de prospection personnalisés par IA, analytics. Abonnements Starter/Pro/Agency.</p>
+                <div class="pj-tech"><span>Next.js</span><span>Supabase</span><span>Claude AI</span><span>Stripe</span><span>Docker</span></div>
+            </div>
+        </div>
+
+        <!-- NexMétier -->
+        <div class="pj-card rv">
+            <div class="pj-vis">
+                <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="200" fill="#0C1020"/>
+                    <circle cx="200" cy="88" r="52" fill="none" stroke="#00E5D4" stroke-width="1" opacity=".18"/>
+                    <circle cx="200" cy="88" r="36" fill="none" stroke="#00E5D4" stroke-width="1" opacity=".28"/>
+                    <circle cx="200" cy="88" r="20" fill="#00E5D4" opacity=".07"/>
+                    <text x="200" y="94" text-anchor="middle" font-family="Share Tech Mono" font-size="13" fill="#00E5D4" opacity=".8">IA</text>
+                    <rect x="28" y="150" width="344" height="28" rx="3" fill="#121828"/>
+                    <rect x="38" y="158" width="196" height="12" rx="2" fill="#1A2535"/>
+                    <rect x="318" y="158" width="44" height="12" rx="2" fill="#00E5D4" opacity=".55"/>
+                    <text x="200" y="194" text-anchor="middle" font-family="Share Tech Mono" font-size="10" fill="#00E5D4" opacity=".45">nexmetier.fr — LIVE</text>
+                </svg>
+                <div class="pj-ov"><a href="https://nexmetier.fr" target="_blank" class="btn-p" style="font-size:.78rem;padding:9px 22px">Voir le site →</a></div>
+            </div>
+            <div class="pj-info">
+                <div class="pj-live"><div class="pj-dot"></div>EN PRODUCTION</div>
+                <h3 class="pj-h">NexMétier</h3>
+                <p class="pj-p">Conseiller IA de reconversion professionnelle. Génère des rapports personnalisés de 20+ pages. Modèle freemium — 9,90€ le rapport complet.</p>
+                <div class="pj-tech"><span>Next.js</span><span>Claude Sonnet</span><span>Stripe</span><span>France Travail API</span></div>
+            </div>
+        </div>
+
+        <!-- Amazi Music -->
+        <div class="pj-card rv">
+            <div class="pj-vis">
+                <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="200" fill="#0C1020"/>
+                    <g opacity=".55">
+                        <rect x="36" y="90"  width="4" height="20" rx="2" fill="#FFB300"/>
+                        <rect x="46" y="74"  width="4" height="52" rx="2" fill="#FFB300"/>
+                        <rect x="56" y="84"  width="4" height="32" rx="2" fill="#FFB300"/>
+                        <rect x="66" y="64"  width="4" height="72" rx="2" fill="#00E5D4"/>
+                        <rect x="76" y="80"  width="4" height="40" rx="2" fill="#FFB300"/>
+                        <rect x="86" y="98"  width="4" height="4"  rx="2" fill="#FFB300"/>
+                        <rect x="96" y="70"  width="4" height="60" rx="2" fill="#FFB300"/>
+                        <rect x="106" y="85" width="4" height="30" rx="2" fill="#FFB300"/>
+                        <rect x="116" y="60" width="4" height="80" rx="2" fill="#00E5D4"/>
+                        <rect x="126" y="78" width="4" height="44" rx="2" fill="#FFB300"/>
+                    </g>
+                    <circle cx="286" cy="88" r="44" fill="none" stroke="#FFB300" stroke-width="1" opacity=".28"/>
+                    <circle cx="286" cy="88" r="28" fill="#FFB300" opacity=".05"/>
+                    <text x="286" y="94" text-anchor="middle" font-family="Share Tech Mono" font-size="18" fill="#FFB300" opacity=".7">♪</text>
+                    <text x="200" y="185" text-anchor="middle" font-family="Share Tech Mono" font-size="10" fill="#FFB300" opacity=".45">amazimusic.fr — LIVE</text>
+                </svg>
+                <div class="pj-ov"><a href="https://amazimusic.fr" target="_blank" class="btn-p" style="font-size:.78rem;padding:9px 22px">Voir le site →</a></div>
+            </div>
+            <div class="pj-info">
+                <div class="pj-live"><div class="pj-dot"></div>EN PRODUCTION</div>
+                <h3 class="pj-h">Amazi Music</h3>
+                <p class="pj-p">Plateforme musicale amazighe avec player IA, covers générées par Gemini Vision, contenu bilingue FR/amazighe et intégration Stripe.</p>
+                <div class="pj-tech"><span>HTML/CSS/JS</span><span>Gemini Vision</span><span>Stripe</span><span>ElevenLabs</span></div>
+            </div>
+        </div>
+
+        <!-- YouTube Pipeline -->
+        <div class="pj-card rv">
+            <div class="pj-vis">
+                <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="200" fill="#0C1020"/>
+                    <circle cx="72" cy="88" r="28" fill="#0D1928" stroke="#00E5D4" stroke-width="1" opacity=".55"/>
+                    <text x="72" y="84" text-anchor="middle" font-family="Share Tech Mono" font-size="8" fill="#00E5D4" opacity=".8">SCRIPT</text>
+                    <text x="72" y="97" text-anchor="middle" font-family="Share Tech Mono" font-size="8" fill="#00E5D4" opacity=".5">CLAUDE</text>
+                    <line x1="100" y1="88" x2="148" y2="88" stroke="#00E5D4" stroke-width="1" stroke-dasharray="4" opacity=".4"/>
+                    <circle cx="176" cy="88" r="28" fill="#0D1928" stroke="#FFB300" stroke-width="1" opacity=".55"/>
+                    <text x="176" y="84" text-anchor="middle" font-family="Share Tech Mono" font-size="8" fill="#FFB300" opacity=".8">VOIX</text>
+                    <text x="176" y="97" text-anchor="middle" font-family="Share Tech Mono" font-size="8" fill="#FFB300" opacity=".5">ELEVEN</text>
+                    <line x1="204" y1="88" x2="252" y2="88" stroke="#00E5D4" stroke-width="1" stroke-dasharray="4" opacity=".4"/>
+                    <circle cx="280" cy="88" r="28" fill="#0D1928" stroke="#00E5D4" stroke-width="1" opacity=".55"/>
+                    <text x="280" y="84" text-anchor="middle" font-family="Share Tech Mono" font-size="8" fill="#00E5D4" opacity=".8">VIDÉO</text>
+                    <text x="280" y="97" text-anchor="middle" font-family="Share Tech Mono" font-size="8" fill="#00E5D4" opacity=".5">FFMPEG</text>
+                    <line x1="308" y1="88" x2="340" y2="88" stroke="#00E5D4" stroke-width="1" stroke-dasharray="4" opacity=".4"/>
+                    <text x="357" y="93" text-anchor="middle" font-family="Share Tech Mono" font-size="20" fill="#FF3D71" opacity=".8">▶</text>
+                    <text x="200" y="145" text-anchor="middle" font-family="Share Tech Mono" font-size="9" fill="#00E5D4" opacity=".35">Pipeline automatisé • ~1€/vidéo</text>
+                    <text x="200" y="185" text-anchor="middle" font-family="Share Tech Mono" font-size="10" fill="#00E5D4" opacity=".45">YouTube Automation — Actif</text>
+                </svg>
+                <div class="pj-ov"><span class="btn-p" style="font-size:.78rem;padding:9px 22px">Pipeline IA ↗</span></div>
+            </div>
+            <div class="pj-info">
+                <div class="pj-live"><div class="pj-dot"></div>ACTIF</div>
+                <h3 class="pj-h">YouTube IA Pipeline</h3>
+                <p class="pj-p">Système de production vidéo entièrement automatisé : script Claude → voix ElevenLabs → images Gemini → montage FFmpeg → upload YouTube. Coût : ~1€/vidéo.</p>
+                <div class="pj-tech"><span>Claude</span><span>ElevenLabs</span><span>Gemini</span><span>FFmpeg</span><span>YouTube API</span></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ═══ AI DEMO ═══ -->
+<section id="ai-demo">
+    <div class="s-tag rv">Démonstration live</div>
+    <h2 class="s-title rv">POSEZ-MOI <em>UNE QUESTION</em></h2>
+    <p class="s-desc rv">Mon assistant IA répond en temps réel. C'est exactement ce type d'interface que je construis pour vos clients.</p>
+    <div class="ai-wrap">
+        <div class="chat-win rv">
+            <div class="chat-hdr">
+                <div class="c-dot" style="background:#FF5F57"></div>
+                <div class="c-dot" style="background:#FEBC2E"></div>
+                <div class="c-dot" style="background:#28C840"></div>
+                <span class="chat-title">// CAMEL AI ASSISTANT</span>
+            </div>
+            <div class="chat-msgs" id="chat-msgs">
+                <div class="msg msg-ai">
+                    <div class="m-lbl">IA ASSISTANT</div>
+                    Bonjour 👋 Je suis l'assistant de Camel. Posez vos questions sur ses services, projets ou tarifs — je suis là pour vous aider.
+                </div>
+            </div>
+            <div class="chat-sugg">
+                <button class="sugg-btn" onclick="ask(this)">Quels services proposez-vous ?</button>
+                <button class="sugg-btn" onclick="ask(this)">Quels sont vos tarifs ?</button>
+                <button class="sugg-btn" onclick="ask(this)">Pouvez-vous créer un SaaS ?</button>
+                <button class="sugg-btn" onclick="ask(this)">Délais de livraison ?</button>
+            </div>
+            <div class="chat-inp-row">
+                <input class="chat-inp" id="ci2" type="text" placeholder="Posez votre question..." onkeydown="if(event.key==='Enter')send()">
+                <button class="chat-send" onclick="send()">→</button>
+            </div>
+        </div>
+        <div class="ai-side rv">
+            <div class="s-tag">Pourquoi l'IA ?</div>
+            <h3>L'IA n'est plus une option, c'est votre<br><em style="color:var(--teal);font-style:normal">avantage compétitif</em></h3>
+            <p>Chaque projet que je livre intègre l'intelligence artificielle là où elle crée de la valeur réelle — pas juste pour suivre la tendance.</p>
+            <div class="ai-feat">
+                <div class="ai-feat-item">
+                    <span class="ai-feat-icon">◆</span>
+                    <div><strong>Réduction des coûts opérationnels</strong><span>Automatisation des tâches répétitives jusqu'à 80%</span></div>
+                </div>
+                <div class="ai-feat-item">
+                    <span class="ai-feat-icon">◆</span>
+                    <div><strong>Expérience client personnalisée</strong><span>Chatbots et assistants disponibles 24h/24, 7j/7</span></div>
+                </div>
+                <div class="ai-feat-item">
+                    <span class="ai-feat-icon">◆</span>
+                    <div><strong>Avantage concurrentiel durable</strong><span>Les entreprises qui adoptent l'IA maintenant prennent 5 ans d'avance</span></div>
+                </div>
+                <div class="ai-feat-item">
+                    <span class="ai-feat-icon">◆</span>
+                    <div><strong>ROI mesurable rapidement</strong><span>Premiers résultats visibles dès les premières semaines</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ VOICE AI ═══ -->
+<section id="voice">
+    <div class="s-tag rv" style="justify-content:center">Interface Vocale IA</div>
+    <h2 class="s-title rv" style="text-align:center">ENTENDEZ<br><em>L'IA PARLER</em></h2>
+    <p class="s-desc rv" style="margin:0 auto;text-align:center">Cliquez pour entendre ma présentation lue par une voix IA. Ce type d'interface s'intègre dans n'importe quelle application.</p>
+
+    <div class="v-orb" id="v-orb" onclick="speak()">
+        <span class="v-icon" id="v-ico">🎙️</span>
+    </div>
+    <div class="waveform" id="wf">
+        <div class="wb"></div><div class="wb"></div><div class="wb"></div><div class="wb"></div><div class="wb"></div>
+        <div class="wb"></div><div class="wb"></div><div class="wb"></div><div class="wb"></div><div class="wb"></div>
+    </div>
+    <div class="v-status" id="v-st">CLIQUEZ POUR ÉCOUTER</div>
+</section>
+
+<!-- ═══ ROI IA ═══ -->
+<section id="roi">
+    <div class="s-tag rv" style="justify-content:center">Impact Mesurable</div>
+    <h2 class="s-title rv" style="text-align:center">L'IA EN <em>CHIFFRES</em></h2>
+    <p class="s-desc rv" style="margin:0 auto 72px;text-align:center">Résultats mesurés sur des projets réels. Voici ce que l'intégration de l'intelligence artificielle change concrètement dans une entreprise.</p>
+
+    <!-- KPIs -->
+    <div class="roi-kpis rv" id="roi-kpis">
+        <div class="roi-kpi">
+            <div class="roi-kpi-badge">ROI</div>
+            <div class="roi-kpi-val"><span class="roi-kpi-num" data-t="350">0</span><span class="roi-kpi-suffix">%</span></div>
+            <div class="roi-kpi-label">RETOUR SUR<br>INVESTISSEMENT MOYEN</div>
+        </div>
+        <div class="roi-kpi">
+            <div class="roi-kpi-badge">GAIN</div>
+            <div class="roi-kpi-val"><span class="roi-kpi-num" data-t="80">0</span><span class="roi-kpi-suffix">%</span></div>
+            <div class="roi-kpi-label">TÂCHES RÉPÉTITIVES<br>AUTOMATISÉES</div>
+        </div>
+        <div class="roi-kpi">
+            <div class="roi-kpi-badge">VITESSE</div>
+            <div class="roi-kpi-val"><span class="roi-kpi-num" data-t="10">0</span><span class="roi-kpi-suffix">×</span></div>
+            <div class="roi-kpi-label">PLUS RAPIDE SUR<br>L'ANALYSE DE DONNÉES</div>
+        </div>
+        <div class="roi-kpi">
+            <div class="roi-kpi-badge">DISPO</div>
+            <div class="roi-kpi-val" style="font-size:clamp(2rem,4vw,3rem)">24/7</div>
+            <div class="roi-kpi-label">DISPONIBILITÉ<br>SERVICE CLIENT IA</div>
+        </div>
+    </div>
+
+    <!-- Bar chart -->
+    <div class="roi-bars-wrap rv" id="roi-bars">
+        <div class="roi-bars-title">SECTEURS LES PLUS TRANSFORMÉS PAR L'IA</div>
+        <div class="roi-bar-row">
+            <div class="roi-bar-label">Service Client</div>
+            <div class="roi-bar-track"><div class="roi-bar-fill t" style="--w:.88"></div></div>
+            <div class="roi-bar-pct" style="color:var(--teal)">88%</div>
+        </div>
+        <div class="roi-bar-row">
+            <div class="roi-bar-label">Vente & Prospection</div>
+            <div class="roi-bar-track"><div class="roi-bar-fill a" style="--w:.82"></div></div>
+            <div class="roi-bar-pct" style="color:var(--amber)">82%</div>
+        </div>
+        <div class="roi-bar-row">
+            <div class="roi-bar-label">Marketing & Contenu</div>
+            <div class="roi-bar-track"><div class="roi-bar-fill g" style="--w:.79"></div></div>
+            <div class="roi-bar-pct" style="color:#00FF99">79%</div>
+        </div>
+        <div class="roi-bar-row">
+            <div class="roi-bar-label">Comptabilité & Admin</div>
+            <div class="roi-bar-track"><div class="roi-bar-fill t" style="--w:.74"></div></div>
+            <div class="roi-bar-pct" style="color:var(--teal)">74%</div>
+        </div>
+        <div class="roi-bar-row">
+            <div class="roi-bar-label">RH & Recrutement</div>
+            <div class="roi-bar-track"><div class="roi-bar-fill p" style="--w:.68"></div></div>
+            <div class="roi-bar-pct" style="color:var(--pink)">68%</div>
+        </div>
+        <div class="roi-bar-row">
+            <div class="roi-bar-label">Logistique</div>
+            <div class="roi-bar-track"><div class="roi-bar-fill a" style="--w:.61"></div></div>
+            <div class="roi-bar-pct" style="color:var(--amber)">61%</div>
+        </div>
+    </div>
+
+    <!-- Use cases circular -->
+    <div class="roi-cases-title rv">CAS D'USAGE CONCRETS</div>
+    <div class="roi-cases rv" id="roi-cases">
+        <div class="roi-case">
+            <div class="roi-case-icon">💬</div>
+            <div class="roi-circle">
+                <svg viewBox="0 0 96 96" width="96" height="96">
+                    <circle class="roi-circle-track" cx="48" cy="48" r="39"/>
+                    <circle class="roi-circle-fill col-t" cx="48" cy="48" r="39" data-pct="0.78"/>
+                </svg>
+                <div class="roi-circle-num col-t">+78%</div>
+            </div>
+            <div class="roi-case-title">CHATBOT IA</div>
+            <div class="roi-case-desc">Satisfaction client améliorée. Réponses instantanées 24/7 sans intervention humaine sur 80% des demandes courantes.</div>
+        </div>
+        <div class="roi-case">
+            <div class="roi-case-icon">⚡</div>
+            <div class="roi-circle">
+                <svg viewBox="0 0 96 96" width="96" height="96">
+                    <circle class="roi-circle-track" cx="48" cy="48" r="39"/>
+                    <circle class="roi-circle-fill col-a" cx="48" cy="48" r="39" data-pct="0.82"/>
+                </svg>
+                <div class="roi-circle-num col-a">-82%</div>
+            </div>
+            <div class="roi-case-title">AUTOMATISATION</div>
+            <div class="roi-case-desc">Réduction du temps de traitement. Facturation, relances, rapports et saisies gérés automatiquement.</div>
+        </div>
+        <div class="roi-case">
+            <div class="roi-case-icon">✍️</div>
+            <div class="roi-circle">
+                <svg viewBox="0 0 96 96" width="96" height="96">
+                    <circle class="roi-circle-track" cx="48" cy="48" r="39"/>
+                    <circle class="roi-circle-fill col-g" cx="48" cy="48" r="39" data-pct="0.90"/>
+                </svg>
+                <div class="roi-circle-num col-g">5×</div>
+            </div>
+            <div class="roi-case-title">GÉNÉRATION CONTENU</div>
+            <div class="roi-case-desc">Volume multiplié par 5. Articles, posts, emails et fiches produits générés en quelques secondes.</div>
+        </div>
+        <div class="roi-case">
+            <div class="roi-case-icon">📊</div>
+            <div class="roi-circle">
+                <svg viewBox="0 0 96 96" width="96" height="96">
+                    <circle class="roi-circle-track" cx="48" cy="48" r="39"/>
+                    <circle class="roi-circle-fill col-p" cx="48" cy="48" r="39" data-pct="0.65"/>
+                </svg>
+                <div class="roi-circle-num col-p">+65%</div>
+            </div>
+            <div class="roi-case-title">ANALYSE DONNÉES</div>
+            <div class="roi-case-desc">Décisions plus précises. L'IA analyse vos données en temps réel et identifie les opportunités cachées.</div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ TECH ═══ -->
+<section id="tech">
+    <div class="s-tag rv">Outils & Technologies</div>
+    <h2 class="s-title rv">MON <em>ARSENAL</em></h2>
+    <div class="tech-pills rv">
+        <span class="t-pill">Next.js 15</span><span class="t-pill">React</span><span class="t-pill">TypeScript</span>
+        <span class="t-pill">Python 3.12</span><span class="t-pill">FastAPI</span><span class="t-pill">Tailwind CSS</span>
+        <span class="t-pill">Claude API</span><span class="t-pill">Gemini 2.0</span><span class="t-pill">ElevenLabs</span>
+        <span class="t-pill">Supabase</span><span class="t-pill">PostgreSQL</span><span class="t-pill">SQLite</span>
+        <span class="t-pill">Docker</span><span class="t-pill">Traefik</span><span class="t-pill">n8n</span>
+        <span class="t-pill">Stripe</span><span class="t-pill">Resend</span><span class="t-pill">Twilio</span>
+        <span class="t-pill">FFmpeg</span><span class="t-pill">Playwright</span><span class="t-pill">GitHub Actions</span>
+        <span class="t-pill">Framer Motion</span><span class="t-pill">VPS Linux</span><span class="t-pill">Android SDK</span>
+    </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+    <div class="s-tag rv">Parlons de votre projet</div>
+    <h2 class="s-title rv">DÉMARRONS <em>ENSEMBLE</em></h2>
+    <div class="ct-grid">
+        <div class="rv">
+            <h3 class="ct-h">Prêt à créer quelque chose d'extraordinaire ?</h3>
+            <p class="ct-p">Que vous ayez une idée précise ou un problème à résoudre, je vous accompagne de la conception au déploiement. Réponse garantie sous 24h.</p>
+            <div class="ct-links">
+                <a href="mailto:admin@bizops.fr" class="ct-link">
+                    <div class="ct-ico">✉</div>admin@bizops.fr
+                </a>
+                <a href="#" class="ct-link">
+                    <div class="ct-ico">in</div>linkedin.com/in/camel-benmoussa
+                </a>
+                <a href="https://malt.fr" target="_blank" class="ct-link">
+                    <div class="ct-ico">M</div>Malt — TJM 350€/jour
+                </a>
+                <a href="https://github.com" target="_blank" class="ct-link">
+                    <div class="ct-ico">⌨</div>github.com/kamel-benmoussa
+                </a>
+            </div>
+        </div>
+        <div class="ct-form rv">
+            <div class="fg">
+                <input class="fi" id="f-name" type="text" placeholder=" ">
+                <label class="fl" for="f-name">VOTRE NOM</label>
+            </div>
+            <div class="fg">
+                <input class="fi" id="f-email" type="email" placeholder=" ">
+                <label class="fl" for="f-email">EMAIL</label>
+            </div>
+            <div class="fg">
+                <input class="fi" id="f-project" type="text" placeholder=" ">
+                <label class="fl" for="f-project">VOTRE PROJET</label>
+            </div>
+            <div class="fg">
+                <textarea class="ft" id="f-msg" rows="4" placeholder=" "></textarea>
+                <label class="fl" for="f-msg">DÉTAILS DU PROJET</label>
+            </div>
+            <button class="btn-p" onclick="submitForm()" style="width:100%;justify-content:center">ENVOYER →</button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="f-logo">CAMEL BENMOUSSA</div>
+    <div class="f-txt">© 2026 — Développeur IA & Solutions Digitales — Marseille, France</div>
+    <div class="f-txt" style="color:var(--teal)">DISPONIBLE POUR MISSIONS FREELANCE</div>
+</footer>
+
+<script src="js/cursor.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/hero.js"></script>
+<script src="js/scroll-video.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/voice.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
