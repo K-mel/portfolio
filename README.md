@@ -8,7 +8,7 @@ Développeur IA & créateur de solutions digitales — SaaS, automatisation, int
 
 ## Aperçu
 
-![Aperçu du portfolio](img/acqlead.jpg)
+![Aperçu du portfolio](img/portfolio-preview.jpg)
 
 Site statique avec animations scroll, particules canvas, voix IA et sections ROI interactives.
 
